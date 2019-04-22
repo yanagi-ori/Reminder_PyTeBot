@@ -50,6 +50,16 @@ class SQL_worker:
             self.cursor.execute('UPDATE user_data SET completed_tasks = ? WHERE user_id = ?',
                                 (stats, user_id,))
 
+    def write_morning(self, time, user_id):
+        with self.connection:
+            self.cursor.execute('UPDATE user_data SET morning_remind = ? WHERE user_id = ?',
+                                (time, user_id,))
+
+    def write_evening(self, time, user_id):
+        with self.connection:
+            self.cursor.execute('UPDATE user_data SET evening_remind = ? WHERE user_id = ?',
+                                (time, user_id,))
+
     def close(self):
         """ Закрываем текущее соединение с БД """
         self.connection.close()

@@ -1,5 +1,5 @@
-start_keyboard = [['Add new Task', 'Start daemon'], ['Read my Tasks', 'My stats'], ['Settings'], ['Send Feedback']]
-main_keyboard = [['Add new Task'], ['Read my Tasks', 'My stats'], ['Settings'], ['Send Feedback']]
+start_keyboard = [['Add new Task', 'Start daemon'], ['Read my Tasks', 'My Stats'], ['Settings'], ['Send Feedback']]
+main_keyboard = [['Add new Task'], ['Read my Tasks', 'My Stats'], ['Settings'], ['Send Feedback']]
 settings_keyboard = [['Set morning remind time'], ['Set evening remind time'], ['Cancel']]
 
 welcome_message = 'Этот бот поможет тебе эффективнне справляться со своими задачами. ' \
@@ -16,5 +16,5 @@ ask_feedback = 'Enter your feedback message'
 done = 'Done!'
 fb_mes = ' sent feedback: '
 alarm = 'Beep-beep! Time is up!'
-no_tasks = 'You haven\'t any tasks yet.'
+no_tasks = 'No actual tasks'
 
